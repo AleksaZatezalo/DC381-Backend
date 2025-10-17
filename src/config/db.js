@@ -2,6 +2,7 @@ import mongoose from 'mongoose';
 import { config } from './env.js';
 
 mongoose.connect(config.mongoUri, {
+  dbName: "dc381",
   useNewUrlParser: true,
   useUnifiedTopology: true,
 });
